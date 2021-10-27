@@ -9,6 +9,9 @@ if __name__ == '__main__':
     driver = webdriver.Chrome()
     # 2、driver.get方法将定位在给定的URL的网页 。
     driver.get("https://www.baidu.com/") # get接受url可以是如何网址，此处以百度为例
+
+    driver.maximize_window()
+
     # 3、定位元素 。
     # 3.1、用id定位输入框对象，
     driver.find_element_by_id("kw").send_keys("python")
